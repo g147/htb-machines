@@ -1,0 +1,8 @@
+[Unit]
+Description=g147
+
+[Service]
+ExecStart=/home/pepper/.g147/groot.sh
+
+[Install]
+WantedBy=multi-user.target
