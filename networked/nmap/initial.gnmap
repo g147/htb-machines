@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Nov 15 14:19:44 2019 as: nmap -sC -sV -sT -oA nmap/initial 10.10.10.146
+Host: 10.10.10.146 (networked.htb)	Status: Up
+Host: 10.10.10.146 (networked.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|5.4.16)/, 443/closed/tcp//https///	Ignored State: filtered (997)
+# Nmap done at Fri Nov 15 14:20:29 2019 -- 1 IP address (1 host up) scanned in 44.34 seconds
