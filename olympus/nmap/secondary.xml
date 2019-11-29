@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Sat Oct  6 00:12:59 2018 as: nmap -sU -sC -Pn -oA nmap/secondary 10.10.10.83 -->
+<nmaprun scanner="nmap" args="nmap -sU -sC -Pn -oA nmap/secondary 10.10.10.83" start="1538764979" startstr="Sat Oct  6 00:12:59 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1000" services="2-3,7,9,13,17,19-23,37-38,42,49,53,67-69,80,88,111-113,120,123,135-139,158,161-162,177,192,199,207,217,363,389,402,407,427,434,443,445,464,497,500,502,512-515,517-518,520,539,559,593,623,626,631,639,643,657,664,682-689,764,767,772-776,780-782,786,789,800,814,826,829,838,902-903,944,959,965,983,989-990,996-1001,1007-1008,1012-1014,1019-1051,1053-1060,1064-1070,1072,1080-1081,1087-1088,1090,1100-1101,1105,1124,1200,1214,1234,1346,1419,1433-1434,1455,1457,1484-1485,1524,1645-1646,1701,1718-1719,1761,1782,1804,1812-1813,1885-1886,1900-1901,1993,2000,2002,2048-2049,2051,2148,2160-2161,2222-2223,2343,2345,236<taskprogress task="SYN Stealth Scan" time="1538765051" percent="16.86" remaining="1189" etc="1538766240"/>
+<taskprogress task="SYN Stealth Scan" time="1538765096" percent="20.38" remaining="1118" etc="1538766213"/>
+<taskprogress task="SYN Stealth Scan" time="1538765225" percent="28.53" remaining="1040" etc="1538766265"/>
+<taskprogress task="SYN Stealth Scan" time="1538765288" percent="33.09" remaining="967" etc="1538766255"/>
+<taskprogress task="SYN Stealth Scan" time="1538765345" percent="37.43" remaining="895" etc="1538766239"/>
+<taskprogress task="SYN Stealth Scan" time="1538765399" percent="41.76" remaining="822" etc="1538766220"/>
+<taskprogress task="SYN Stealth Scan" time="1538765456" percent="46.30" remaining="750" etc="1538766205"/>
+<taskprogress task="SYN Stealth Scan" time="1538765519" percent="51.15" remaining="678" etc="1538766196"/>
+<taskprogress task="SYN Stealth Scan" time="1538765582" percent="55.98" remaining="607" etc="1538766189"/>
+<taskprogress task="SYN Stealth Scan" time="1538765639" percent="60.74" remaining="536" etc="1538766175"/>
+<taskprogress task="SYN Stealth Scan" time="1538765717" percent="66.21" remaining="463" etc="1538766180"/>
+<taskprogress task="SYN Stealth Scan" time="1538765819" percent="71.95" remaining="394" etc="1538766212"/>
+<taskprogress task="SYN Stealth Scan" time="1538765900" percent="77.33" remaining="320" etc="1538766220"/>
+<taskprogress task="SYN Stealth Scan" time="1538765972" percent="82.40" remaining="249" etc="1538766220"/>
+<taskprogress task="SYN Stealth Scan" time="1538766056" percent="87.61" remaining="177" etc="1538766232"/>
+<taskprogress task="SYN Stealth Scan" time="1538766140" percent="92.79" remaining="104" etc="1538766243"/>
+<taskend task="SYN Stealth Scan" time="1538766316" extrainfo="65536 total ports"/>
+<taskbegin task="Service scan" time="1538766316"/>
+<taskend task="Service scan" time="1538766333" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1538766333"/>
+<taskend task="NSE" time="1538766343"/>
+<taskbegin task="NSE" time="1538766343"/>
+<taskend task="NSE" time="1538766343"/>
+<host starttime="1538764810" endtime="1538766343"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.83" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="domain" extrainfo="unknown banner: Bind" servicefp="SF-Port53-TCP:V=7.70%I=7%D=10/6%Time=5BB7B5F7%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,3F,&quot;\0=\0\x06\x85\0\0\x01\0\x01\0\x01\0\0\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x05\x04Bind\xc0\x0c\0\x02\0\x03\0\0\0\0\0\x02\xc0\x0c&quot;);" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port2222-TCP:V=7.70%I=7%D=10/6%Time=5BB7B5F2%P=x86_64-pc-linux-gnu%r(NULL,29,&quot;SSH-2\.0-City\x20of\x20olympia\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\r\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="230092" rttvar="94673" to="608784"/>
+</host>
+<runstats><finished time="1538766343" timestr="Sat Oct  6 00:35:43 2018" elapsed="1533.28" summary="Nmap done at Sat Oct  6 00:35:43 2018; 1 IP address (1 host up) scanned in 1533.28 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
+52503,53006,53037,53571,53589,53838,54094,54114,54281,54321,54711,54807,54925,55043,55544,55587,56141,57172,57409-57410,57813,57843,57958,57977,58002,58075,58178,58419,58631,58640,58797,59193,59207,59765,59846,60172,60381,60423,61024,61142,61319,61322,61370,61412,61481,61550,61685,61961,62154,62287,62575,62677,62699,62958,63420,63555,64080,64481,64513,64590,64727,65024"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1538764979" endtime="1538766091"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.83" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="999">
+<extrareasons reason="port-unreaches" count="999"/>
+</extraports>
+<port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="62"/><service name="domain" method="table" conf="3"/><script id="dns-nsid" output="&#xa;  bind.version: Bind"><elem key="bind.version">Bind</elem>
+</script></port>
+</ports>
+<times srtt="220000" rttvar="44338" to="397352"/>
+</host>
+<runstats><finished time="1538766091" timestr="Sat Oct  6 00:31:31 2018" elapsed="1112.52" summary="Nmap done at Sat Oct  6 00:31:31 2018; 1 IP address (1 host up) scanned in 1112.52 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

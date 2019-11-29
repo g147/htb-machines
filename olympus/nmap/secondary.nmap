@@ -1,0 +1,24 @@
+# Nmap 7.70 scan initiated Sat Oct  6 00:12:59 2018 as: nmap -sU -sC -Pn -oA nmap/secondary 10.10.10.83
+Nmap scan report Increasing send delay for 10.10.10.83 from 0 to 5 due to 11 out of 26 dropped probes since last increase.
+Nmap scan report for 10.10.10.83
+Host is up (0.23s latency).
+Not shown: 65532 closed ports
+PORT     STATE    SERVICE VERSION
+22/tcp   filtered ssh
+53/tcp   open     domain  (unknown banner: Bind)
+80/tcp   open     http    Apache httpd
+2222/tcp open     ssh     (protocol 2.0)
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.70%I=7%D=10/6%Time=5BB7B5F7%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,3F,"\0=\0\x06\x85\0\0\x01\0\x01\0\x01\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x05\x04Bind\xc0\x0c\
+SF:0\x02\0\x03\0\0\0\0\0\x02\xc0\x0c");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port2222-TCP:V=7.70%I=7%D=10/6%Time=5BB7B5F2%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,29,"SSH-2\.0-City\x20of\x20olympia\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct  6 00:35:43 2018 -- 1 IP address (1 host up) scanned in 1533.28 seconds

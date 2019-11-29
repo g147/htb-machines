@@ -1,0 +1,5 @@
+# Nmap 7.70 scan initiated Sat Oct  6 00:12:59 2018 as: nmap -sU -sC -Pn -oA nmap/secondary 10.10.10.83
+Host: 10.10.10.83 ()	Status: Up
+Host: 10.10.10.83 ()	Ports: 53/open/udp//domain///	IHost: 10.10.10.83 ()	Status: Up
+Host: 10.10.10.83 ()	Ports: 22/filtered/tcp//ssh///, 53/open/tcp//domain//(unknown banner: Bind)/, 80/open/tcp//http//Apache httpd/, 2222/open/tcp//ssh//(protocol 2.0)/	Ignored State: closed (65532)
+# Nmap done at Sat Oct  6 00:35:43 2018 -- 1 IP address (1 host up) scanned in 1533.28 seconds

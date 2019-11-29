@@ -1,0 +1,8 @@
+--> ran both tcp & udp nmap scan
+--> analyze website request & response
+--> exploited xdebug
+--> after some research & enumeration got creds icarus:Too_cl0se_to_th3_Sun
+--> investigated dns for ctfolympus.htb
+--> did port knocking on the 3 numbers 
+--> then logged in via creds prometheus:St34l_th3_Fire!
+--> did the usual docker exploitation for priv esc
