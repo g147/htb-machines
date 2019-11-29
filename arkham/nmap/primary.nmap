@@ -1,0 +1,30 @@
+# Nmap 7.70 scan initiated Tue Aug 20 06:48:36 2019 as: nmap -sC -sV -oA nmap/primary arkham.htb
+Nmap scan report for arkham.htb (10.10.10.130)
+Host is up (0.26s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+8080/tcp open  http          Apache Tomcat 8.5.37
+| http-methods: 
+|_  Potentially risky methods: PUT DELETE
+|_http-title: Mask Inc.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 37s, deviation: 0s, median: 37s
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-08-20 06:49:54
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 20 06:49:53 2019 -- 1 IP address (1 host up) scanned in 77.09 seconds

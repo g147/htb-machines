@@ -1,0 +1,21 @@
+* did nmap scan
+* enumerated smb
+* found appserver.zip in BatShare
+* unzipped it & got a LUKS encrypted image
+* cracked using bruteforce-luks : 'batmanforever'
+* got some tomcat configs
+* enumerated port 80
+* enumerated port 8080
+* looks interesting : http://arkham.htb:8080/userSubscribe.faces
+* contains a serialized Java object in the hidden javax.faces.ViewState field
+* it looks encrypted
+* got the secret from the tomcat config : web.xml.bak : SnNGOTg3Ni0= : JsF9876-
+* original payload format DES_Encrypted_Payload + HMACSHA1 digest
+* HMACSHA1 digest : 4316fbf09f0c451815fe858db0e6f9a30c626b2b
+* used YSoSerial to generate the payload
+* sended payload & executed netcat to get the reverse shell
+* got user
+* found a backup file in alfred's downloads
+* got a password : Zx^#QZX+T!123
+* used UNC paths to bypass UAC
+* got root
