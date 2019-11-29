@@ -1,0 +1,11 @@
+cn
+commonName
+mail
+name
+objectClass
+pager
+sn
+surname
+uid
+userPassword
+

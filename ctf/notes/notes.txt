@@ -1,0 +1,20 @@
+* ran nmap scan
+* enumerated open ports
+* /login.php might be the only entrypoint
+* 81 digits cryptographic token is being used to generate otp
+* enumerated usernames via wfuzz & found 'ldapuser'
+* keeping in mind the blacklisting, ldap might be in use
+* vulnerable to ldap injection
+* bypassed the search filter using double url encoding
+* enumerated valid attributes
+* 'pager' attribute has the token
+* token : 285449490011357156531651545652335570713167411445727140604172141456711102716717000
+* generated otp using stoken
+* used null byte injection during login to skip group validation
+* ldapuser%29%29%29%00
+* got reverse shell for user 'apache'
+* enumerated creds for user 'ldapuser' to 'e398e27d5c4ad45086fe431120932a01' from login.php
+* got user flag
+* exploited honeypot.sh to read the root flag
+
+
