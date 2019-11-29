@@ -1,0 +1,13 @@
+*  scanned via nmap
+*  browsed port 10000 in SSL mode
+*  virtual hosting is enabled
+*  chaos.htb added in host file
+*  busted /wp directory
+*  password for /wp - 'human'
+*  creds for mail ayush:jiujitsu
+*  accessed the email service & got a mail from drafts
+*  used AES Decryptor to decrypt the message using pwd - 'sahay'
+*  browsed the new link & exploited LaTeX USING \immediate\write18{reverse_shell}
+*  used previously got credentials of 'ayush' for escalation
+*  used tar for shell escaping
+*  found password for root using the saved logins in .mozilla directory

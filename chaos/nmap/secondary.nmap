@@ -1,0 +1,17 @@
+# Nmap 7.70 scan initiated Sun Dec 16 15:39:38 2018 as: nmap -v -sV -sS -p0-65535 -T4 -Pn -oA secondary 10.10.10.120
+Increasing send delay for 10.10.10.120 from 0 to 5 due to 10158 out of 25394 dropped probes since last increase.
+Nmap scan report for 10.10.10.120
+Host is up (0.19s latency).
+Not shown: 65530 closed ports
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Apache httpd 2.4.34 ((Ubuntu))
+110/tcp   open  pop3     Dovecot pop3d
+143/tcp   open  imap     Dovecot imapd (Ubuntu)
+993/tcp   open  ssl/imap Dovecot imapd (Ubuntu)
+995/tcp   open  ssl/pop3 Dovecot pop3d
+10000/tcp open  http     MiniServ 1.890 (Webmin httpd)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec 16 15:58:07 2018 -- 1 IP address (1 host up) scanned in 1109.00 seconds
