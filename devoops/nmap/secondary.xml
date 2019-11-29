@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Oct 25 17:41:39 2018 as: nmap -v -sV -sS -p0-65535 -T4 -Pn -oA nmap/secondary 10.10.10.91 -->
+<nmaprun scanner="nmap" args="nmap -v -sV -sS -p0-65535 -T4 -Pn -oA nmap/secondary 10.10.10.91" start="1540469499" startstr="Thu Oct 25 17:41:39 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65536" services="0-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1540469499"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1540469499"/>
+<taskbegin task="SYN Stealth Scan" time="1540469499"/>
+<taskprogress task="SYN Stealth Scan" time="1540469530" percent="5.09" remaining="579" etc="1540470108"/>
+<taskprogress task="SYN Stealth Scan" time="1540469560" percent="7.60" remaining="742" etc="1540470302"/>
+<taskprogress task="SYN Stealth Scan" time="1540469629" percent="15.66" remaining="701" etc="1540470329"/>
+<taskprogress task="SYN Stealth Scan" time="1540469674" percent="21.02" remaining="658" etc="1540470332"/>
+<taskprogress task="SYN Stealth Scan" time="1540469716" percent="26.08" remaining="616" etc="1540470331"/>
+<taskprogress task="SYN Stealth Scan" time="1540469764" percent="31.68" remaining="572" etc="1540470335"/>
+<taskprogress task="SYN Stealth Scan" time="1540469812" percent="37.25" remaining="528" etc="1540470339"/>
+<taskprogress task="SYN Stealth Scan" time="1540469860" percent="42.80" remaining="483" etc="1540470342"/>
+<taskprogress task="SYN Stealth Scan" time="1540469911" percent="48.37" remaining="440" etc="1540470351"/>
+<taskprogress task="SYN Stealth Scan" time="1540469956" percent="53.52" remaining="397" etc="1540470353"/>
+<taskprogress task="SYN Stealth Scan" time="1540470004" percent="58.89" remaining="353" etc="1540470357"/>
+<taskprogress task="SYN Stealth Scan" time="1540470049" percent="64.07" remaining="309" etc="1540470357"/>
+<taskprogress task="SYN Stealth Scan" time="1540470094" percent="69.24" remaining="265" etc="1540470358"/>
+<taskprogress task="SYN Stealth Scan" time="1540470139" percent="74.40" remaining="221" etc="1540470359"/>
+<taskprogress task="SYN Stealth Scan" time="1540470187" percent="79.66" remaining="176" etc="1540470363"/>
+<taskprogress task="SYN Stealth Scan" time="1540470232" percent="84.86" remaining="131" etc="1540470363"/>
+<taskprogress task="SYN Stealth Scan" time="1540470280" percent="90.22" remaining="85" etc="1540470365"/>
+<taskprogress task="SYN Stealth Scan" time="1540470325" percent="95.33" remaining="41" etc="1540470365"/>
+<taskend task="SYN Stealth Scan" time="1540470378" extrainfo="65536 total ports"/>
+<taskbegin task="Service scan" time="1540470378"/>
+<taskend task="Service scan" time="1540470384" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1540470384"/>
+<taskend task="NSE" time="1540470385"/>
+<taskbegin task="NSE" time="1540470385"/>
+<taskend task="NSE" time="1540470385"/>
+<host starttime="1540469499" endtime="1540470385"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.91" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="resets" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Gunicorn" version="19.7.1" method="probed" conf="10"><cpe>cpe:/a:gunicorn:gunicorn:19.7.1</cpe></service></port>
+</ports>
+<times srtt="173649" rttvar="350" to="175049"/>
+</host>
+<runstats><finished time="1540470386" timestr="Thu Oct 25 17:56:26 2018" elapsed="886.64" summary="Nmap done at Thu Oct 25 17:56:26 2018; 1 IP address (1 host up) scanned in 886.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
