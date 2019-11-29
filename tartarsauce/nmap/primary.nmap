@@ -1,0 +1,15 @@
+# Nmap 7.70 scan initiated Sat Oct 27 01:42:41 2018 as: nmap -sC -sV -oA primary 10.10.10.88
+Nmap scan report for 10.10.10.88
+Host is up (0.16s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-robots.txt: 5 disallowed entries 
+| /webservices/tar/tar/source/ 
+| /webservices/monstra-3.0.4/ /webservices/easy-file-uploader/ 
+|_/webservices/developmental/ /webservices/phpmyadmin/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Landing Page
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 27 01:43:07 2018 -- 1 IP address (1 host up) scanned in 26.21 seconds

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Sat Oct 27 01:40:04 2018 as: nmap -v -sV -sS -p0-65535 -T4 -Pn -oA secondary 10.10.10.88 -->
+<nmaprun scanner="nmap" args="nmap -v -sV -sS -p0-65535 -T4 -Pn -oA secondary 10.10.10.88" start="1540584604" startstr="Sat Oct 27 01:40:04 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65536" services="0-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1540584605"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1540584605"/>
+<taskbegin task="SYN Stealth Scan" time="1540584605"/>
+<taskprogress task="SYN Stealth Scan" time="1540584636" percent="9.62" remaining="292" etc="1540584927"/>
+<taskprogress task="SYN Stealth Scan" time="1540584666" percent="19.92" remaining="246" etc="1540584911"/>
+<taskprogress task="SYN Stealth Scan" time="1540584696" percent="29.53" remaining="218" etc="1540584913"/>
+<taskprogress task="SYN Stealth Scan" time="1540584726" percent="38.42" remaining="194" etc="1540584920"/>
+<taskprogress task="SYN Stealth Scan" time="1540584762" percent="47.09" remaining="177" etc="1540584938"/>
+<taskprogress task="SYN Stealth Scan" time="1540584792" percent="59.14" remaining="130" etc="1540584921"/>
+<taskprogress task="SYN Stealth Scan" time="1540584822" percent="68.67" remaining="99" etc="1540584921"/>
+<taskprogress task="SYN Stealth Scan" time="1540584852" percent="80.29" remaining="61" etc="1540584913"/>
+<taskprogress task="SYN Stealth Scan" time="1540584882" percent="88.28" remaining="37" etc="1540584919"/>
+<taskend task="SYN Stealth Scan" time="1540584924" extrainfo="65536 total ports"/>
+<taskbegin task="Service scan" time="1540584924"/>
+<taskend task="Service scan" time="1540584930" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1540584930"/>
+<taskend task="NSE" time="1540584931"/>
+<taskbegin task="NSE" time="1540584931"/>
+<taskend task="NSE" time="1540584931"/>
+<host starttime="1540584605" endtime="1540584931"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65535">
+<extrareasons reason="resets" count="65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service></port>
+</ports>
+<times srtt="163468" rttvar="238" to="164420"/>
+</host>
+<runstats><finished time="1540584931" timestr="Sat Oct 27 01:45:31 2018" elapsed="327.11" summary="Nmap done at Sat Oct 27 01:45:31 2018; 1 IP address (1 host up) scanned in 327.11 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
