@@ -1,0 +1,21 @@
+* did an nmap scan
+* added nestedflanders.htb to hosts
+* apache is running on port 8080
+* found /dev directory
+* found /index.php
+* nginx vulnerable to breaking parser logic
+* exploited it to get the source for index.php
+* got 3 main id - 25 main, 465 about, 587 contact
+* id is vulnerable to sql injection
+* dumped databases via SQLmap
+* got the actual filenames in db: neddy table: filepath
+* got LFI via LFI.py
+* vulnerable to php log poisioning
+* got meterpreter shell as www-data by changing the user-agent value
+* updated the mariadb config for id-86(checkrelease) to socat reverse shell
+* got user.txt
+* extracted the contents of initrd
+* got /sbin/uinitrd c0m3s3f0ss34nt4n1
+* got password 132f93ab100671dcb263acaf5dc95d8260e8b7c6
+* got root.txt
+
