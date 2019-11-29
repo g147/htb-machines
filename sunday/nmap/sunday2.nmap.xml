@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Mon Oct  1 16:37:31 2018 as: nmap -T4 -p0-65535 -sV -sS -Pn -oA sunday2.nmap 10.10.10.76 -->
+<nmaprun scanner="nmap" args="nmap -T4 -p0-65535 -sV -sS -Pn -oA sunday2.nmap 10.10.10.76" start="1538392051" startstr="Mon Oct  1 16:37:31 2018" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65536" services="0-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1538392051" endtime="1538394285"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.76" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65149">
+<extrareasons reason="resets" count="65149"/>
+</extraports>
+<extraports state="filtered" count="383">
+<extrareasons reason="no-responses" count="383"/>
+</extraports>
+<port protocol="tcp" portid="79"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="finger" product="Sun Solaris fingerd" ostype="Solaris" method="probed" conf="10"><cpe>cpe:/o:sun:sunos</cpe></service></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="22022"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="ssh" product="SunSSH" version="1.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:sun:sunssh:1.3</cpe></service></port>
+<port protocol="tcp" portid="45678"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="rpcbind" method="probed" conf="10"/></port>
+</ports>
+<times srtt="167212" rttvar="7814" to="198468"/>
+</host>
+<runstats><finished time="1538394285" timestr="Mon Oct  1 17:14:45 2018" elapsed="2234.47" summary="Nmap done at Mon Oct  1 17:14:45 2018; 1 IP address (1 host up) scanned in 2234.47 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

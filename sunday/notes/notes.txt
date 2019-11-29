@@ -1,0 +1,13 @@
+--> ran tcp nmap scan
+--> found two username -'sam' & 'sunny' while enumerating finger
+--> ran a full tcp-syn can
+--> found ssh listening on 22022
+--> bruteforced ssh via hydra & found creds sunny:sunday
+--> used ssh using diffie hellman algorithm
+--> pivoting to 'sammy' is required
+--> joined shadow & passwd file & cracked it with john
+--> got creds sammy:cooldude!
+--> wget is running as root
+--> used its post-file parameter for priv esc
+
+
