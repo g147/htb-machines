@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Sun Dec  2 16:06:18 2018 as: nmap -sC -sV -oA primary 10.10.10.153
+Nmap scan report for 10.10.10.153
+Host is up (0.20s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Blackhat highschool
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec  2 16:07:03 2018 -- 1 IP address (1 host up) scanned in 45.75 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sun Dec  2 16:06:18 2018 as: nmap -sC -sV -oA primary 10.10.10.153
+Host: 10.10.10.153 ()	Status: Up
+Host: 10.10.10.153 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	Ignored State: closed (999)
+# Nmap done at Sun Dec  2 16:07:03 2018 -- 1 IP address (1 host up) scanned in 45.75 seconds

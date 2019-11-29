@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Sun Dec  2 16:09:10 2018 as: nmap -v -sV -sS -p0-65535 -T4 -Pn -oA secondary 10.10.10.153
+Increasing send delay for 10.10.10.153 from 0 to 5 due to 1930 out of 4824 dropped probes since last increase.
+Nmap scan report for 10.10.10.153
+Host is up (0.20s latency).
+Not shown: 65535 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Dec  2 16:27:51 2018 -- 1 IP address (1 host up) scanned in 1120.42 seconds
