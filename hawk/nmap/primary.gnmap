@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sat Dec  1 19:17:55 2018 as: nmap -sC -sV -oA primary 10.10.10.102
+Host: 10.10.10.102 ()	Status: Up
+Host: 10.10.10.102 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 222/filtered/tcp//rsh-spx///, 407/filtered/tcp//timbuktu///, 631/filtered/tcp//ipp///, 808/filtered/tcp//ccproxy-http///, 1094/filtered/tcp//rootd///, 3017/filtered/tcp//event_listener///, 8082/open/tcp//http//H2 database http console/, 56738/filtered/tcp//unknown///	Ignored State: closed (989)
+# Nmap done at Sat Dec  1 19:19:09 2018 -- 1 IP address (1 host up) scanned in 74.53 seconds

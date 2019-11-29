@@ -1,0 +1,16 @@
+* did an nmap scan
+* enumerated port 80
+* port 8080 is inaccessible & requires certificate
+* got rce on http://fortune.htb/select
+* got intermediate cert keys to generate the certificate
+* added the certificate & now port 8080 works
+* got authpf ssh access for user 'nfsuser'
+* did another nmap scan
+* mounted the nfs
+* accessed files for user 'charlie' by creating a user account having its uid
+* got user.txt
+* got ssh access for 'charlie' by adding my keys to authorized keys
+* enumeration reveals that 'root' credentials are as same for 'pgadmin4'
+* got bob's hash & decrypted it to 'R3us3-0f-a-P4ssw0rdl1k3th1s?_B4D.ID3A!'
+* got root.txt
+

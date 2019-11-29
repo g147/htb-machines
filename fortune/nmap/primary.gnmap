@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sun Aug 11 17:17:04 2019 as: nmap -sC -sV -oA nmap/primary fortune.htb
+Host: 10.10.10.127 (fortune.htb)	Status: Up
+Host: 10.10.10.127 (fortune.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.9 (protocol 2.0)/, 80/open/tcp//http//OpenBSD httpd/, 443/open/tcp//ssl|https?///
+# Nmap done at Sun Aug 11 17:19:12 2019 -- 1 IP address (1 host up) scanned in 128.47 seconds

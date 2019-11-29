@@ -1,0 +1,43 @@
+# Nmap 7.70 scan initiated Sat Dec  1 19:17:55 2018 as: nmap -sC -sV -oA primary 10.10.10.102
+Nmap scan report for 10.10.10.102
+Host is up (0.20s latency).
+Not shown: 989 closed ports
+PORT      STATE    SERVICE        VERSION
+21/tcp    open     ftp            vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 ftp      ftp          4096 Jun 16 22:21 messages
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.10.14.85
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp    open     ssh            OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e4:0c:cb:c5:a5:91:78:ea:54:96:af:4d:03:e4:fc:88 (RSA)
+|   256 95:cb:f8:c7:35:5e:af:a9:44:8b:17:59:4d:db:5a:df (ECDSA)
+|_  256 4a:0b:2e:f7:1d:99:bc:c7:d3:0b:91:53:b9:3b:e2:79 (ED25519)
+80/tcp    open     http           Apache httpd 2.4.29 ((Ubuntu))
+|_http-generator: Drupal 7 (http://drupal.org)
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Welcome to 192.168.56.103 | 192.168.56.103
+222/tcp   filtered rsh-spx
+407/tcp   filtered timbuktu
+631/tcp   filtered ipp
+808/tcp   filtered ccproxy-http
+1094/tcp  filtered rootd
+3017/tcp  filtered event_listener
+8082/tcp  open     http           H2 database http console
+|_http-title: H2 Console
+56738/tcp filtered unknown
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec  1 19:19:09 2018 -- 1 IP address (1 host up) scanned in 74.53 seconds
