@@ -1,0 +1,6 @@
+* found open ports - 135 139 445 1433
+* found creds reporting:PcwTWTHRwryjc$c6
+* got ntlmv2 hashes
+* cracked the hashes
+* got creds mssql-svc:corporate568
+* got creds Administrator:MyUnclesAreMarioAndLuigi!!1!
