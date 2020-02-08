@@ -1,0 +1,21 @@
+Target: http://player.htb/
+Total requests: 5000
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00019:  C=200     86 L	     229 W	   5243 Ch	  "dev"
+00067:  C=200     63 L	     180 W	   1470 Ch	  "staging"
+00070:  C=200    259 L	     714 W	   9513 Ch	  "chat"
+02700:  C=400     12 L	      53 W	    422 Ch	  "m."
+02795:  C=400     12 L	      53 W	    422 Ch	  "ns2.cl.bellsouth.net."
+02883:  C=400     12 L	      53 W	    422 Ch	  "ns1.viviotech.net."
+02885:  C=400     12 L	      53 W	    422 Ch	  "ns2.viviotech.net."
+03050:  C=400     12 L	      53 W	    422 Ch	  "ns3.cl.bellsouth.net."
+04081:  C=400     12 L	      53 W	    422 Ch	  "ferrari.fortwayne.com."
+04082:  C=400     12 L	      53 W	    422 Ch	  "jordan.fortwayne.com."
+04083:  C=400     12 L	      53 W	    422 Ch	  "quatro.oweb.com."
+
+Total time: 0
+Processed Requests: 5000
+Filtered Requests: 4989
+Requests/sec.: 0

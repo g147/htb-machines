@@ -1,0 +1,65 @@
+HTTP/1.1 200 OK
+
+Date: Sat, 01 Feb 2020 09:00:09 GMT
+
+Server: Apache/2.4.7 (Ubuntu)
+
+X-Powered-By: PHP/5.5.9-1ubuntu4.26
+
+refresh: 0;url=501.php
+
+Vary: Accept-Encoding
+
+Content-Length: 818
+
+Connection: close
+
+Content-Type: text/html
+
+
+
+array(3) {
+  [0]=>
+  array(4) {
+    ["file"]=>
+    string(28) "/var/www/staging/contact.php"
+    ["line"]=>
+    int(6)
+    ["function"]=>
+    string(1) "c"
+    ["args"]=>
+    array(1) {
+      [0]=>
+      &string(9) "Cleveland"
+    }
+  }
+  [1]=>
+  array(4) {
+    ["file"]=>
+    string(28) "/var/www/staging/contact.php"
+    ["line"]=>
+    int(3)
+    ["function"]=>
+    string(1) "b"
+    ["args"]=>
+    array(1) {
+      [0]=>
+      &string(5) "Glenn"
+    }
+  }
+  [2]=>
+  array(4) {
+    ["file"]=>
+    string(28) "/var/www/staging/contact.php"
+    ["line"]=>
+    int(11)
+    ["function"]=>
+    string(1) "a"
+    ["args"]=>
+    array(1) {
+      [0]=>
+      &string(5) "Peter"
+    }
+  }
+}
+Database connection failed.<html><br />Unknown variable user in /var/www/backup/service_config fatal error in /var/www/staging/fix.php

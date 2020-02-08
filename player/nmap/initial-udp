@@ -1,0 +1,10 @@
+# Nmap 7.70 scan initiated Fri Jan 31 16:29:34 2020 as: nmap -sC -sV -sU -T4 -o /home/beast/Hunt/htb/machines/player/nmap/initial-udp -Pn player.htb
+Warning: 10.10.10.145 giving up on port because retransmission cap hit (6).
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for player.htb (10.10.10.145)
+Host is up (0.32s latency).
+All 1000 scanned ports on player.htb (10.10.10.145) are closed (787) or open|filtered (213)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 17:25:36 2020 -- 1 IP address (1 host up) scanned in 3361.95 seconds

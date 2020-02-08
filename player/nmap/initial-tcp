@@ -1,0 +1,17 @@
+# Nmap 7.70 scan initiated Fri Jan 31 16:28:46 2020 as: nmap -sC -sV -sT -T4 -o /home/beast/Hunt/htb/machines/player/nmap/initial-tcp -Pn player.htb
+Nmap scan report for player.htb (10.10.10.145)
+Host is up (0.17s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 37:2b:e4:31:ee:a6:49:0d:9f:e7:e6:01:e6:3e:0a:66 (RSA)
+|   256 0c:6c:05:ed:ad:f1:75:e8:02:e4:d2:27:3e:3a:19:8f (ECDSA)
+|_  256 11:b8:db:f3:cc:29:08:4a:49:ce:bf:91:73:40:a2:80 (ED25519)
+80/tcp open  http    Apache httpd 2.4.7
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: 403 Forbidden
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 16:29:34 2020 -- 1 IP address (1 host up) scanned in 48.21 seconds

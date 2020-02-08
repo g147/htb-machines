@@ -1,0 +1,8 @@
+# Nmap 7.70 scan initiated Fri Jan 31 17:34:24 2020 as: nmap -sC -sV -sU -T4 -o /home/beast/Hunt/htb/machines/ai/nmap/initial-udp -Pn ai.htb
+Warning: 10.10.10.163 giving up on port because retransmission cap hit (6).
+Nmap scan report for ai.htb (10.10.10.163)
+Host is up (0.25s latency).
+All 1000 scanned ports on ai.htb (10.10.10.163) are closed (798) or open|filtered (202)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 18:30:24 2020 -- 1 IP address (1 host up) scanned in 3359.96 seconds
