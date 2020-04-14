@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Wed Jan 29 15:14:38 2020 as: nmap -T4 -sV -sSU -p T:80,443 -oA /tmp/sparta-199ovU-running/nmap/20200129151438-nmapstage1 10.10.10.178 -->
+<nmaprun scanner="nmap" args="nmap -T4 -sV -sSU -p T:80,443 -oA /tmp/sparta-199ovU-running/nmap/20200129151438-nmapstage1 10.10.10.178" start="1580310878" startstr="Wed Jan 29 15:14:38 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="80,443"/>
+<scaninfo type="udp" protocol="udp" numservices="0" services=""/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1580310879" endtime="1580310882"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.178" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nest.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="160048" rttvar="160048" to="800240"/>
+</host>
+<runstats><finished time="1580310882" timestr="Wed Jan 29 15:14:42 2020" elapsed="4.00" summary="Nmap done at Wed Jan 29 15:14:42 2020; 1 IP address (1 host up) scanned in 4.00 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

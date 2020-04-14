@@ -1,0 +1,2 @@
+# Nmap 7.70 scan initiated Sat Feb  1 04:11:30 2020 as: nmap -sC -sU -sT -p- -T4 -o /home/beast/Hunt/htb/machines/nest/nmap/full nest.htb
+# Nmap done at Sat Feb  1 04:11:33 2020 -- 1 IP address (0 hosts up) scanned in 2.70 seconds

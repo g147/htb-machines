@@ -1,0 +1,11 @@
+WARNING: UDP scan was requested, but no udp ports were specified.  Skipping this scan type.
+# Nmap 7.70 scan initiated Wed Jan 29 15:14:38 2020 as: nmap -T4 -sV -sSU -p T:80,443 -oA /tmp/sparta-199ovU-running/nmap/20200129151438-nmapstage1 10.10.10.178
+Nmap scan report for nest.htb (10.10.10.178)
+Host is up (0.16s latency).
+
+PORT    STATE    SERVICE VERSION
+80/tcp  filtered http
+443/tcp filtered https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 29 15:14:42 2020 -- 1 IP address (1 host up) scanned in 4.00 seconds

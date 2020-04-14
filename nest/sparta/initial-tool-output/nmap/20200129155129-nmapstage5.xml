@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Wed Jan 29 15:51:29 2020 as: nmap -T4 -sV -n -sSU -p T:30000-65535 -oA /tmp/sparta-199ovU-running/nmap/20200129155129-nmapstage5 10.10.10.178 -->
+<nmaprun scanner="nmap" args="nmap -T4 -sV -n -sSU -p T:30000-65535 -oA /tmp/sparta-199ovU-running/nmap/20200129155129-nmapstage5 10.10.10.178" start="1580313089" startstr="Wed Jan 29 15:51:29 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="35536" services="30000-65535"/>
+<scaninfo type="udp" protocol="udp" numservices="0" services=""/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1580313089" endtime="1580316365"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.178" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="35536">
+<extrareasons reason="no-responses" count="35515"/>
+<extrareasons reason="host-unreaches" count="21"/>
+</extraports>
+</ports>
+<times srtt="827024" rttvar="570191" to="1250000"/>
+</host>
+<runstats><finished time="1580316365" timestr="Wed Jan 29 16:46:05 2020" elapsed="3276.65" summary="Nmap done at Wed Jan 29 16:46:05 2020; 1 IP address (1 host up) scanned in 3276.65 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

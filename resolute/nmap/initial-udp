@@ -1,0 +1,104 @@
+# Nmap 7.70 scan initiated Fri Jan 31 19:38:13 2020 as: nmap -sC -sV -sU -T4 -o /home/beast/Hunt/htb/machines/resolute/nmap/initial-udp -Pn resolute.htb
+Warning: 10.10.10.169 giving up on port because retransmission cap hit (6).
+Nmap scan report for resolute.htb (10.10.10.169)
+Host is up (0.26s latency).
+Not shown: 731 closed ports, 247 open|filtered ports
+PORT      STATE    SERVICE         VERSION
+53/udp    open     domain          (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+88/udp    open     kerberos-sec    Microsoft Windows Kerberos (server time: 2020-01-31 20:34:14Z)
+123/udp   open     ntp?
+| ntp-info: 
+|_  
+389/udp   open     ldap            Microsoft Windows Active Directory LDAP (Domain: megabank.local, Site: Default-First-Site-Name)
+3343/udp  filtered ms-cluster-net
+4008/udp  filtered netcheque
+7000/udp  filtered afs3-fileserver
+49154/udp open     unknown
+49158/udp open     unknown
+49204/udp open     unknown
+49350/udp open     unknown
+49640/udp open     unknown
+54094/udp open     unknown
+| fingerprint-strings: 
+|   DNS-SD: 
+|     _services
+|     _dns-sd
+|     _udp
+|_    local
+54114/udp open     unknown
+| fingerprint-strings: 
+|   DNS-SD: 
+|     _services
+|     _dns-sd
+|     _udp
+|_    local
+57977/udp open     unknown
+58419/udp open     unknown
+| fingerprint-strings: 
+|   Kerberos: 
+|     ^0\xa0
+|     krbtgt
+|_    19700101000000Z
+59765/udp open     unknown
+59846/udp open     unknown
+61370/udp open     unknown
+62287/udp open     domain          (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+62575/udp open     domain          (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   DNSVersionBindReq: 
+|     version
+|     bind
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+64080/udp open     domain          (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+7 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-UDP:V=7.70%I=7%D=1/31%Time=5E348DB1%P=x86_64-unknown-linux-gnu%r
+SF:(NBTStat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAA
+SF:AAAAAAAAAAAA\0\0!\0\x01");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port54094-UDP:V=7.70%I=7%D=1/31%Time=5E348DDC%P=x86_64-unknown-linux-gn
+SF:u%r(DNS-SD,2E,"\0\0\x80\x82\0\x01\0\0\0\0\0\0\t_services\x07_dns-sd\x04
+SF:_udp\x05local\0\0\x0c\0\x01");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port54114-UDP:V=7.70%I=7%D=1/31%Time=5E348DDC%P=x86_64-unknown-linux-gn
+SF:u%r(DNS-SD,2E,"\0\0\x80\x82\0\x01\0\0\0\0\0\0\t_services\x07_dns-sd\x04
+SF:_udp\x05local\0\0\x0c\0\x01")%r(Citrix,1E,"\x1e\0\x81\x01\x02\xfd\xa8\x
+SF:e3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port58419-UDP:V=7.70%I=7%D=1/31%Time=5E3490E5%P=x86_64-unknown-linux-gn
+SF:u%r(Kerberos,71,"j\x81\xee\x04\x81k\xa1\x03\x02\x01\x05\xa2\x03\x02\x01
+SF:\n\xa4\x81\^0\\\xa0\x07\x03\x05\0P\x80\0\x10\xa2\x04\x1b\x02NM\xa3\x170
+SF:\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM\xa5\x11\x18
+SF:\x0f19700101000000Z\xa7\x06\x02\x04\x1f\x1e\xb9\xd9\xa8\x170\x15\x02\x0
+SF:1\x12\x02\x01\x11\x02\x01\x10\x02\x01\x17\x02\x01\x01\x02\x01\x03\x02\x
+SF:01\x02");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port62287-UDP:V=7.70%I=7%D=1/31%Time=5E3490B5%P=x86_64-unknown-linux-gn
+SF:u%r(NBTStat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAA
+SF:AAAAAAAAAAAAAAA\0\0!\0\x01");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port62575-UDP:V=7.70%I=7%D=1/31%Time=5E348DA7%P=x86_64-unknown-linux-gn
+SF:u%r(DNSVersionBindReq,1E,"\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03")%r(NBTStat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0
+SF:\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port64080-UDP:V=7.70%I=7%D=1/31%Time=5E3490B5%P=x86_64-unknown-linux-gn
+SF:u%r(NBTStat,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAA
+SF:AAAAAAAAAAAAAAA\0\0!\0\x01");
+Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 7m08s, deviation: 0s, median: 7m08s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 20:42:08 2020 -- 1 IP address (1 host up) scanned in 3834.76 seconds

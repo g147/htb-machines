@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Wed Jan 29 15:51:29 2020 as: nmap -T4 -sV -n -sSU -p T:30000-65535 -oA /tmp/sparta-199ovU-running/nmap/20200129155129-nmapstage5 10.10.10.178
+Host: 10.10.10.178 ()	Status: Up
+Host: 10.10.10.178 ()	Status: Up
+# Nmap done at Wed Jan 29 16:46:05 2020 -- 1 IP address (1 host up) scanned in 3276.65 seconds

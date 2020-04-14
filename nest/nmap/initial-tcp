@@ -1,0 +1,18 @@
+# Nmap 7.70 scan initiated Fri Jan 31 16:28:40 2020 as: nmap -sC -sV -sT -T4 -o /home/beast/Hunt/htb/machines/nest/nmap/initial-tcp -Pn nest.htb
+Nmap scan report for nest.htb (10.10.10.178)
+Host is up (0.20s latency).
+Not shown: 999 filtered ports
+PORT    STATE SERVICE       VERSION
+445/tcp open  microsoft-ds?
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-01-31 16:29:29
+|_  start_date: 2020-01-31 15:59:52
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 16:30:05 2020 -- 1 IP address (1 host up) scanned in 84.72 seconds

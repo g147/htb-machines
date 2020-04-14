@@ -1,0 +1,7 @@
+# Nmap 7.70 scan initiated Fri Jan 31 16:30:05 2020 as: nmap -sC -sV -sU -T4 -o /home/beast/Hunt/htb/machines/nest/nmap/initial-udp -Pn nest.htb
+Nmap scan report for nest.htb (10.10.10.178)
+Host is up.
+All 1000 scanned ports on nest.htb (10.10.10.178) are open|filtered
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 31 17:29:02 2020 -- 1 IP address (1 host up) scanned in 3536.90 seconds
