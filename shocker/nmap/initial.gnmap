@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sat May  2 12:43:37 2020 as: nmap -sC -sV -oA nmap/initial shocker.htb
+Host: 10.10.10.56 (shocker.htb)	Status: Up
+Host: 10.10.10.56 (shocker.htb)	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/, 2222/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)/	Ignored State: closed (998)
+# Nmap done at Sat May  2 12:43:59 2020 -- 1 IP address (1 host up) scanned in 22.13 seconds

