@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu May  7 18:26:13 2020 as: nmap -sC -sV -p- -oA nmap/primary postman.htb -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA nmap/primary postman.htb" start="1588875973" startstr="Thu May  7 18:26:13 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1588875974" endtime="1588876922"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.160" addrtype="ipv4"/>
+<hostnames>
+<hostname name="postman.htb" type="user"/>
+<hostname name="postman.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 46:83:4f:f1:38:61:c0:1c:74:cb:b5:d1:4a:68:4d:77 (RSA)&#xa;  256 2d:8d:27:d2:df:15:1a:31:53:05:fb:ff:f0:62:26:89 (ECDSA)&#xa;  256 ca:7c:82:aa:5a:d3:72:ca:8b:8a:38:3a:80:41:a0:45 (ED25519)"><table>
+<elem key="fingerprint">46834ff13861c01c74cbb5d14a684d77</elem>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDem1MnCQG+yciWyLak5YeSzxh4HxjCgxKVfNc1LN+vE1OecEx+cu0bTD5xdQJmyKEkpZ+AVjhQo/esF09a94eMNKcp+bhK1g3wqzLyr6kwE0wTncuKD2bA9LCKOcM6W5GpHKUywB5A/TMPJ7UXeygHseFUZEa+yAYlhFKTt6QTmkLs64sqCna+D/cvtKaB4O9C+DNv5/W66caIaS/B/lPeqLiRoX1ad/GMacLFzqCwgaYeZ9YBnwIstsDcvK9+kCaUE7g2vdQ7JtnX0+kVlIXRi0WXta+BhWuGFWtOV0NYM9IDRkGjSXA4qOyUOBklwvienPt1x2jBrjV8v3p78Tzz</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">2d8d27d2df151a315305fbfff0622689</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIRgCn2sRihplwq7a2XuFsHzC9hW+qA/QsZif9QKAEBiUK6jv/B+UxDiPJiQp3KZ3tX6Arff/FC0NXK27c3EppI=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">ca7c82aa5ad372ca8b8a383a8041a045</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIF3FKsLVdJ5BN8bLpf80Gw89+4wUslxhI3wYfnS+53Xd</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="The Cyber Geek&apos;s Personal Website"><elem key="title">The Cyber Geek&apos;s Personal Website</elem>
+</script></port>
+<port protocol="tcp" portid="6379"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="redis" product="Redis key-value store" version="4.0.9" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="MiniServ" version="1.910" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-title" output="Site doesn&apos;t have a title (text/html; Charset=iso-8859-1)."></script></port>
+</ports>
+<times srtt="206100" rttvar="8266" to="239164"/>
+</host>
+<runstats><finished time="1588876922" timestr="Thu May  7 18:42:02 2020" elapsed="949.45" summary="Nmap done at Thu May  7 18:42:02 2020; 1 IP address (1 host up) scanned in 949.45 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
