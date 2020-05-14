@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Tue May 12 20:19:18 2020 as: nmap -sC -sV -oA nmap/initial lacasadepapel.htb
+Host: 10.10.10.131 (lacasadepapel.htb)	Status: Up
+Host: 10.10.10.131 (lacasadepapel.htb)	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 7.9 (protocol 2.0)/, 80/open/tcp//http//Node.js Express framework/, 443/open/tcp//ssl|http//Node.js Express framework/	Ignored State: closed (996)
+# Nmap done at Tue May 12 20:20:01 2020 -- 1 IP address (1 host up) scanned in 43.76 seconds

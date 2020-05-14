@@ -1,0 +1,17 @@
+
+; <<>> DiG 9.14.4 <<>> axfr @10.10.10.123 friendzone.red
+; (1 server found)
+;; global options: +cmd
+friendzone.red.		604800	IN	SOA	localhost. root.localhost. 2 604800 86400 2419200 604800
+friendzone.red.		604800	IN	AAAA	::1
+friendzone.red.		604800	IN	NS	localhost.
+friendzone.red.		604800	IN	A	127.0.0.1
+administrator1.friendzone.red. 604800 IN A	127.0.0.1
+hr.friendzone.red.	604800	IN	A	127.0.0.1
+uploads.friendzone.red.	604800	IN	A	127.0.0.1
+friendzone.red.		604800	IN	SOA	localhost. root.localhost. 2 604800 86400 2419200 604800
+;; Query time: 200 msec
+;; SERVER: 10.10.10.123#53(10.10.10.123)
+;; WHEN: Wed May 13 20:36:10 UTC 2020
+;; XFR size: 8 records (messages 1, bytes 289)
+

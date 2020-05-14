@@ -1,0 +1,155 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Wed May 13 20:08:02 2020
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.10.123
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ==================================================== 
+|    Enumerating Workgroup/Domain on 10.10.10.123    |
+ ==================================================== 
+[+] Got domain/workgroup name: WORKGROUP
+
+ ============================================ 
+|    Nbtstat Information for 10.10.10.123    |
+ ============================================ 
+Can't load /etc/samba/smb.conf - run testparm to debug it
+Looking up status of 10.10.10.123
+	FRIENDZONE      <00> -         B <ACTIVE>  Workstation Service
+	FRIENDZONE      <03> -         B <ACTIVE>  Messenger Service
+	FRIENDZONE      <20> -         B <ACTIVE>  File Server Service
+	WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+	WORKGROUP       <1e> - <GROUP> B <ACTIVE>  Browser Service Elections
+
+	MAC Address = 00-00-00-00-00-00
+
+ ===================================== 
+|    Session Check on 10.10.10.123    |
+ ===================================== 
+[+] Server 10.10.10.123 allows sessions using username '', password ''
+
+ =========================================== 
+|    Getting domain SID for 10.10.10.123    |
+ =========================================== 
+Unable to initialize messaging context
+rpcclient: Can't load /etc/samba/smb.conf - run testparm to debug it
+[+] Can't determine if host is part of domain or part of a workgroup
+
+ ====================================== 
+|    OS information on 10.10.10.123    |
+ ====================================== 
+[+] Got OS info for 10.10.10.123 from smbclient: 
+[+] Got OS info for 10.10.10.123 from srvinfo:
+Unable to initialize messaging context
+rpcclient: Can't load /etc/samba/smb.conf - run testparm to debug it
+
+ ============================= 
+|    Users on 10.10.10.123    |
+ ============================= 
+
+
+ ========================================= 
+|    Share Enumeration on 10.10.10.123    |
+ ========================================= 
+Unable to initialize messaging context
+smbclient: Can't load /etc/samba/smb.conf - run testparm to debug it
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	Files           Disk      FriendZone Samba Server Files /etc/Files
+	general         Disk      FriendZone Samba Server Files
+	Development     Disk      FriendZone Samba Server Files
+	IPC$            IPC       IPC Service (FriendZone server (Samba, Ubuntu))
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            FROLIC
+
+[+] Attempting to map shares on 10.10.10.123
+//10.10.10.123/print$	Mapping: DENIED, Listing: N/A
+//10.10.10.123/Files	Mapping: DENIED, Listing: N/A
+//10.10.10.123/general	Mapping: OK, Listing: OK
+//10.10.10.123/Development	Mapping: OK, Listing: OK
+//10.10.10.123/IPC$	[E] Can't understand response:
+Unable to initialize messaging context
+smbclient: Can't load /etc/samba/smb.conf - run testparm to debug it
+NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
+
+ ==================================================== 
+|    Password Policy Information for 10.10.10.123    |
+ ==================================================== 
+
+
+[+] Attaching to 10.10.10.123 using a NULL share
+
+[+] Trying protocol 445/SMB...
+
+[+] Found domain(s):
+
+	[+] FRIENDZONE
+	[+] Builtin
+
+[+] Password Info for Domain: FRIENDZONE
+
+	[+] Minimum password length: 5
+	[+] Password history length: None
+	[+] Maximum password age: 37 days 6 hours 21 minutes 
+	[+] Password Complexity Flags: 000000
+
+		[+] Domain Refuse Password Change: 0
+		[+] Domain Password Store Cleartext: 0
+		[+] Domain Password Lockout Admins: 0
+		[+] Domain Password No Clear Change: 0
+		[+] Domain Password No Anon Change: 0
+		[+] Domain Password Complex: 0
+
+	[+] Minimum password age: None
+	[+] Reset Account Lockout Counter: 30 minutes 
+	[+] Locked Account Duration: 30 minutes 
+	[+] Account Lockout Threshold: None
+	[+] Forced Log off Time: 37 days 6 hours 21 minutes 
+
+
+[+] Retieved partial password policy with rpcclient:
+
+
+
+ ============================== 
+|    Groups on 10.10.10.123    |
+ ============================== 
+
+[+] Getting builtin groups:
+
+[+] Getting builtin group memberships:
+
+[+] Getting local groups:
+
+[+] Getting local group memberships:
+
+[+] Getting domain groups:
+
+[+] Getting domain group memberships:
+
+ ======================================================================= 
+|    Users on 10.10.10.123 via RID cycling (RIDS: 500-550,1000-1050)    |
+ ======================================================================= 
+
+ ============================================= 
+|    Getting printer info for 10.10.10.123    |
+ ============================================= 
+Unable to initialize messaging context
+rpcclient: Can't load /etc/samba/smb.conf - run testparm to debug it
+
+
+enum4linux complete on Wed May 13 20:08:37 2020
+
