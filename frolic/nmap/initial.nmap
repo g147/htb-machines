@@ -1,0 +1,89 @@
+# Nmap 7.70 scan initiated Sat May 16 01:21:32 2020 as: nmap -sC -sV -p- -O -oA nmap/initial 10.10.10.111
+Nmap scan report for 10.10.10.111
+Host is up (0.20s latency).
+Scanned at 2020-05-16 01:21:32 UTC for 941s
+Not shown: 65530 closed ports
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 87:7b:91:2a:0f:11:b6:57:1e:cb:9f:77:cf:35:e2:21 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HUqxhCShF9I6uBmGCX6yXz56Iibv7WW2fBKsKA9yVqmoupPdDKac1U3/PIioRNHkPC03r5ZXsqfALwjIWEits7toO4K+9VSFU6d0qhmpUZW3WwiyxdcPxmTQLpU8InXZpMOwjpGJTTwqxsMIxNdPk0FP/MtqEzQI45MOr7IQOGcEAsmcJ1Cy3aRDAnp77NBWYA316l7Xb8WA/aWoHEyS/6Qf3XzeARf0yZ6YwYg4TTsaeQtfRr4HWZBDs7fLrrWUzN0ivb9izy9YgqrOJ5ZKQI4A1yn0CxZNsiweIT8gopM1KrfinPGiKbGbSNVvTX2dHYyISh6Y2bp1D5vum6SH
+|   256 b7:9b:06:dd:c2:5e:28:44:78:41:1e:67:7d:1e:b7:62 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDSjEcHeA/VoBi4PaoyxwM1Rx1vpoQofoJPYTxBuQLXRujf3gqn491cWpd2CDh2mF/3w2kEGsrWRwqD4LZmz+Sk=
+|   256 21:cf:16:6d:82:a4:30:c3:c6:9c:d7:38:ba:b5:02:b0 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINVT+d0lX5zwXTOY4h4+MfU6kt/q3EmGVWIXnMsomQq5
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+1880/tcp open  http        Node.js (Express middleware)
+|_http-favicon: Unknown favicon MD5: 818DD6AFD0D0F9433B21774F89665EEA
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Node-RED
+9999/tcp open  http        nginx 1.10.3 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+|_http-title: Welcome to nginx!
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.70%E=4%D=5/16%OT=22%CT=1%CU=34713%PV=Y%DS=2%DC=I%G=Y%TM=5EBF43C
+OS:9%P=x86_64-unknown-linux-gnu)SEQ(SP=105%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=
+OS:8)OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M5
+OS:4DST11NW7%O6=M54DST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=712
+OS:0)ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S
+OS:+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=
+OS:)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%
+OS:A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%
+OS:DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=
+OS:40%CD=S)
+
+Uptime guess: 0.013 days (since Sat May 16 01:19:06 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: FROLIC; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -1h46m16s, deviation: 3h10m30s, median: 3m42s
+| nbstat: NetBIOS name: FROLIC, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   FROLIC<00>           Flags: <unique><active>
+|   FROLIC<03>           Flags: <unique><active>
+|   FROLIC<20>           Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 58975/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 50509/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 36186/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 55236/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: frolic
+|   NetBIOS computer name: FROLIC\x00
+|   Domain name: \x00
+|   FQDN: frolic
+|_  System time: 2020-05-16T07:10:50+05:30
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-05-16 01:40:50
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May 16 01:37:13 2020 -- 1 IP address (1 host up) scanned in 942.02 seconds

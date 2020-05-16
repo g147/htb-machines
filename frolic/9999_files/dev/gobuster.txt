@@ -1,0 +1,3 @@
+/test (Status: 200)
+/backup (Status: 301)
+../playsms (Status: 200)
