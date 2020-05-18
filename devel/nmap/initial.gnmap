@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sun May 17 23:52:21 2020 as: nmap -sC -sV -oA nmap/initial devel.htb
+Host: 10.10.10.5 (devel.htb)	Status: Up
+Host: 10.10.10.5 (devel.htb)	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft IIS httpd 7.5/	Ignored State: filtered (998)
+# Nmap done at Sun May 17 23:53:07 2020 -- 1 IP address (1 host up) scanned in 46.49 seconds

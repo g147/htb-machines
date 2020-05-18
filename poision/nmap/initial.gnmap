@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Mon May 18 00:29:12 2020 as: nmap -sC -sV -oA nmap/initial poision.htb
+Host: 10.10.10.84 (poision.htb)	Status: Up
+Host: 10.10.10.84 (poision.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.2 (FreeBSD 20161230; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((FreeBSD) PHP|5.6.32)/	Ignored State: closed (998)
+# Nmap done at Mon May 18 00:29:55 2020 -- 1 IP address (1 host up) scanned in 43.15 seconds
