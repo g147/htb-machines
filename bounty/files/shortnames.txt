@@ -1,0 +1,6 @@
+[+] Found 2 directories
+[+] http://10.10.10.93/upload*~1
+[+] http://10.10.10.93/aspnet*~1
+[+] Found 2 files
+[+] http://10.10.10.93/csaspx*~1.cs*
+[+] http://10.10.10.93/transf*~1.asp*
