@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Fri May 22 01:12:04 2020 as: nmap -sC -sV -sU -p69 -oA nmap/initial -T4 10.10.10.90 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -sU -p69 -oA nmap/initial -T4 10.10.10.90" start="1590109924" startstr="Fri May 22 01:12:04 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1" services="69"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590109925" endtime="1590109927"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.90" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dropzone.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="69"><state state="open" reason="udp-response" reason_ttl="127"/><service name="tftp" product="SolarWinds Free tftpd" method="probed" conf="10"><cpe>cpe:/a:solarwinds:tftp_server</cpe></service></port>
+</ports>
+<times srtt="334284" rttvar="277116" to="1250000"/>
+</host>
+<runstats><finished time="1590109927" timestr="Fri May 22 01:12:07 2020" elapsed="2.85" summary="Nmap done at Fri May 22 01:12:07 2020; 1 IP address (1 host up) scanned in 2.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

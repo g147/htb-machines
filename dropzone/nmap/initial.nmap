@@ -1,0 +1,9 @@
+# Nmap 7.70 scan initiated Fri May 22 01:12:04 2020 as: nmap -sC -sV -sU -p69 -oA nmap/initial -T4 10.10.10.90
+Nmap scan report for dropzone.htb (10.10.10.90)
+Host is up (0.33s latency).
+
+PORT   STATE SERVICE VERSION
+69/udp open  tftp    SolarWinds Free tftpd
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 22 01:12:07 2020 -- 1 IP address (1 host up) scanned in 2.85 seconds

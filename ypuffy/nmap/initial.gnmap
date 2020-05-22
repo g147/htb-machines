@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Fri May 22 02:53:25 2020 as: nmap -sC -sV -oA nmap/initial 10.10.10.107
+Host: 10.10.10.107 (ypuffy.htb)	Status: Up
+Host: 10.10.10.107 (ypuffy.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.7 (protocol 2.0)/, 80/open/tcp//http//OpenBSD httpd/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: YPUFFY)/, 389/open/tcp//ldap//(Anonymous bind OK)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6 (workgroup: YPUFFY)/	Ignored State: closed (995)
+# Nmap done at Fri May 22 02:54:10 2020 -- 1 IP address (1 host up) scanned in 45.64 seconds

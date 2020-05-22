@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Fri May 22 01:12:04 2020 as: nmap -sC -sV -sU -p69 -oA nmap/initial -T4 10.10.10.90
+Host: 10.10.10.90 (dropzone.htb)	Status: Up
+Host: 10.10.10.90 (dropzone.htb)	Ports: 69/open/udp//tftp//SolarWinds Free tftpd/
+# Nmap done at Fri May 22 01:12:07 2020 -- 1 IP address (1 host up) scanned in 2.85 seconds
