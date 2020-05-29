@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Tue May 26 16:38:43 2020 as: nmap -sC -sV -sU -oA nmap/full -T4 -p U:161, 10.10.10.116
+Host: 10.10.10.116 (conceal.htb)	Status: Up
+Host: 10.10.10.116 (conceal.htb)	Ports: 161/open/udp//snmp//SNMPv1 server (public)/
+# Nmap done at Tue May 26 16:40:27 2020 -- 1 IP address (1 host up) scanned in 104.31 seconds

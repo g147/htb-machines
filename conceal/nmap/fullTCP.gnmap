@@ -1,0 +1,2 @@
+# Nmap 7.70 scan initiated Tue May 26 19:14:16 2020 as: nmap -sC -sV -sT -oA nmap/fullTCP -T4
+# Nmap done at Tue May 26 19:14:17 2020 -- 0 IP addresses (0 hosts up) scanned in 1.14 seconds

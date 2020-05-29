@@ -1,0 +1,40 @@
+# Nmap 7.70 scan initiated Tue May 26 19:14:33 2020 as: nmap -sC -sV -sT -oA nmap/initialTCP -T4 10.10.10.116
+Nmap scan report for conceal.htb (10.10.10.116)
+Host is up (0.20s latency).
+Scanned at 2020-05-26 19:14:34 UTC for 57s
+Not shown: 995 closed ports
+PORT    STATE SERVICE       VERSION
+21/tcp  open  ftp           Microsoft ftpd
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp  open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows
+135/tcp open  msrpc         Microsoft Windows RPC
+139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1m26s, deviation: 0s, median: 1m26s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 24024/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 27412/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 39851/udp): CLEAN (Timeout)
+|   Check 4 (port 61491/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-05-26 19:16:48
+|_  start_date: 2020-05-26 15:34:38
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May 26 19:15:31 2020 -- 1 IP address (1 host up) scanned in 57.92 seconds

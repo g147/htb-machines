@@ -1,0 +1,342 @@
+# Nmap 7.70 scan initiated Tue May 26 16:38:43 2020 as: nmap -sC -sV -sU -oA nmap/full -T4 -p U:161, 10.10.10.116
+Nmap scan report for conceal.htb (10.10.10.116)
+Host is up (0.34s latency).
+Scanned at 2020-05-26 16:38:43 UTC for 104s
+
+PORT    STATE SERVICE VERSION
+161/udp open  snmp    SNMPv1 server (public)
+| snmp-interfaces: 
+|   Software Loopback Interface 1\x00
+|     IP address: 127.0.0.1  Netmask: 255.0.0.0
+|     Type: softwareLoopback  Speed: 1 Gbps
+|     Status: up
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (IKEv2)\x00
+|     Type: tunnel  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (PPTP)\x00
+|     Type: tunnel  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   Microsoft Kernel Debug Network Adapter\x00
+|     Type: ethernetCsmacd  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (L2TP)\x00
+|     Type: tunnel  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   Teredo Tunneling Pseudo-Interface\x00
+|     MAC address: Unknown
+|     Type: tunnel  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (IP)\x00
+|     Type: ethernetCsmacd  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (SSTP)\x00
+|     Type: tunnel  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (IPv6)\x00
+|     Type: ethernetCsmacd  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   Intel(R) 82574L Gigabit Network Connection\x00
+|     IP address: 10.10.10.116  Netmask: 255.255.255.0
+|     MAC address: 00:50:56:b9:4f:f3 (VMware)
+|     Type: ethernetCsmacd  Speed: 1 Gbps
+|     Status: up
+|     Traffic stats: 139.82 Kb sent, 41.52 Mb received
+|   WAN Miniport (PPPOE)\x00
+|     Type: ppp  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   WAN Miniport (Network Monitor)\x00
+|     Type: ethernetCsmacd  Speed: 0 Kbps
+|     Traffic stats: 0.00 Kb sent, 0.00 Kb received
+|   Intel(R) 82574L Gigabit Network Connection-WFP Native MAC Layer LightWeight Filter-0000\x00
+|     MAC address: 00:50:56:b9:4f:f3 (VMware)
+|     Type: ethernetCsmacd  Speed: 1 Gbps
+|     Status: up
+|     Traffic stats: 139.82 Kb sent, 41.52 Mb received
+|   Intel(R) 82574L Gigabit Network Connection-QoS Packet Scheduler-0000\x00
+|     MAC address: 00:50:56:b9:4f:f3 (VMware)
+|     Type: ethernetCsmacd  Speed: 1 Gbps
+|     Status: up
+|     Traffic stats: 139.82 Kb sent, 41.52 Mb received
+|   Intel(R) 82574L Gigabit Network Connection-WFP 802.3 MAC Layer LightWeight Filter-0000\x00
+|     MAC address: 00:50:56:b9:4f:f3 (VMware)
+|     Type: ethernetCsmacd  Speed: 1 Gbps
+|     Status: up
+|_    Traffic stats: 139.82 Kb sent, 41.52 Mb received
+| snmp-netstat: 
+|   TCP  0.0.0.0:21           0.0.0.0:0
+|   TCP  0.0.0.0:80           0.0.0.0:0
+|   TCP  0.0.0.0:135          0.0.0.0:0
+|   TCP  0.0.0.0:445          0.0.0.0:0
+|   TCP  0.0.0.0:49664        0.0.0.0:0
+|   TCP  0.0.0.0:49665        0.0.0.0:0
+|   TCP  0.0.0.0:49666        0.0.0.0:0
+|   TCP  0.0.0.0:49667        0.0.0.0:0
+|   TCP  0.0.0.0:49668        0.0.0.0:0
+|   TCP  0.0.0.0:49669        0.0.0.0:0
+|   TCP  0.0.0.0:49670        0.0.0.0:0
+|   TCP  10.10.10.116:139     0.0.0.0:0
+|   UDP  0.0.0.0:123          *:*
+|   UDP  0.0.0.0:161          *:*
+|   UDP  0.0.0.0:500          *:*
+|   UDP  0.0.0.0:4500         *:*
+|   UDP  0.0.0.0:5050         *:*
+|   UDP  0.0.0.0:5353         *:*
+|   UDP  0.0.0.0:5355         *:*
+|   UDP  10.10.10.116:137     *:*
+|   UDP  10.10.10.116:138     *:*
+|   UDP  10.10.10.116:1900    *:*
+|   UDP  10.10.10.116:50508   *:*
+|   UDP  127.0.0.1:1900       *:*
+|_  UDP  127.0.0.1:50509      *:*
+| snmp-processes: 
+|   1: 
+|     Name: System Idle Process
+|   4: 
+|     Name: System
+|   308: 
+|     Name: smss.exe
+|   340: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k LocalService
+|   348: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k LocalSystemNetworkRestricted
+|   392: 
+|     Name: csrss.exe
+|   472: 
+|     Name: wininit.exe
+|   484: 
+|     Name: csrss.exe
+|   532: 
+|     Name: svchost.exe
+|   564: 
+|     Name: winlogon.exe
+|   584: 
+|     Name: services.exe
+|   616: 
+|     Name: lsass.exe
+|     Path: C:\Windows\system32\
+|   692: 
+|     Name: fontdrvhost.exe
+|   700: 
+|     Name: fontdrvhost.exe
+|   708: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k DcomLaunch
+|   812: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k RPCSS
+|   896: 
+|     Name: dwm.exe
+|   968: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k netsvcs
+|   976: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k LocalServiceNoNetwork
+|   984: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k LocalServiceNetworkRestricted
+|   1040: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k NetworkService
+|   1092: 
+|     Name: vmacthlp.exe
+|     Path: C:\Program Files\VMware\VMware Tools\
+|   1208: 
+|     Name: dllhost.exe
+|     Path: C:\Windows\system32\
+|     Params: /Processid:{02D4B3F1-FD88-11D1-960D-00805FC79235}
+|   1212: 
+|     Name: Memory Compression
+|   1232: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k LocalServiceNetworkRestricted
+|   1344: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k LocalServiceNetworkRestricted
+|   1352: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k LocalServiceNetworkRestricted
+|   1500: 
+|     Name: spoolsv.exe
+|     Path: C:\Windows\System32\
+|   1712: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k apphost
+|   1724: 
+|     Name: SearchIndexer.exe
+|     Path: C:\Windows\system32\
+|     Params: /Embedding
+|   1736: 
+|     Name: svchost.exe
+|     Path: C:\Windows\System32\
+|     Params: -k utcsvc
+|   1800: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k ftpsvc
+|   1820: 
+|     Name: SecurityHealthService.exe
+|   1852: 
+|     Name: snmp.exe
+|     Path: C:\Windows\System32\
+|   1872: 
+|     Name: VGAuthService.exe
+|     Path: C:\Program Files\VMware\VMware Tools\VMware VGAuth\
+|   1880: 
+|     Name: SearchProtocolHost.exe
+|     Path: C:\Windows\system32\
+|     Params:  Global\UsGthrFltPipeMssGthrPipe14_ Global\UsGthrCtrlFltPipeMssGthrPipe14 1 -2147483646 "Software\Microsoft\Windows Search" "Moz
+|   1884: 
+|     Name: vmtoolsd.exe
+|     Path: C:\Program Files\VMware\VMware Tools\
+|   1900: 
+|     Name: ManagementAgentHost.exe
+|     Path: C:\Program Files\VMware\VMware Tools\VMware CAF\pme\bin\
+|   1920: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k iissvcs
+|   1944: 
+|     Name: MsMpEng.exe
+|   2480: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k NetworkServiceNetworkRestricted
+|   2840: 
+|     Name: WmiPrvSE.exe
+|     Path: C:\Windows\system32\wbem\
+|   3052: 
+|     Name: LogonUI.exe
+|     Params:  /flags:0x0 /state0:0xa3a36855 /state1:0x41c64e6d
+|   3144: 
+|     Name: NisSrv.exe
+|   3328: 
+|     Name: msdtc.exe
+|     Path: C:\Windows\System32\
+|   3436: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k LocalServiceAndNoImpersonation
+|   3556: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k appmodel
+|   3780: 
+|     Name: svchost.exe
+|     Path: C:\Windows\system32\
+|     Params: -k LocalSystemNetworkRestricted
+|   5012: 
+|     Name: SearchFilterHost.exe
+|     Path: C:\Windows\system32\
+|_    Params:  0 692 696 704 8192 700 
+| snmp-sysdescr: Hardware: AMD64 Family 23 Model 1 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 6.3 (Build 15063 Multiprocessor Free)
+|_  System uptime: 1h05m38.70s (393870 timeticks)
+| snmp-win32-services: 
+|   Application Host Helper Service
+|   Background Intelligent Transfer Service
+|   Background Tasks Infrastructure Service
+|   Base Filtering Engine
+|   CNG Key Isolation
+|   COM+ Event System
+|   COM+ System Application
+|   Client License Service (ClipSVC)
+|   Connected Devices Platform Service
+|   Connected User Experiences and Telemetry
+|   CoreMessaging
+|   Cryptographic Services
+|   DCOM Server Process Launcher
+|   DHCP Client
+|   DNS Client
+|   Data Sharing Service
+|   Data Usage
+|   Device Setup Manager
+|   Diagnostic Policy Service
+|   Diagnostic Service Host
+|   Distributed Link Tracking Client
+|   Distributed Transaction Coordinator
+|   Geolocation Service
+|   Group Policy Client
+|   IKE and AuthIP IPsec Keying Modules
+|   IP Helper
+|   IPsec Policy Agent
+|   Local Session Manager
+|   Microsoft FTP Service
+|   Network Connection Broker
+|   Network List Service
+|   Network Location Awareness
+|   Network Store Interface Service
+|   Plug and Play
+|   Power
+|   Print Spooler
+|   Program Compatibility Assistant Service
+|   RPC Endpoint Mapper
+|   Remote Procedure Call (RPC)
+|   SNMP Service
+|   SSDP Discovery
+|   Security Accounts Manager
+|   Security Center
+|   Server
+|   Shell Hardware Detection
+|   State Repository Service
+|   Storage Service
+|   Superfetch
+|   System Event Notification Service
+|   System Events Broker
+|   TCP/IP NetBIOS Helper
+|   Task Scheduler
+|   Themes
+|   Time Broker
+|   TokenBroker
+|   User Manager
+|   User Profile Service
+|   VMware Alias Manager and Ticket Service
+|   VMware CAF Management Agent Service
+|   VMware Physical Disk Helper Service
+|   VMware Tools
+|   WinHTTP Web Proxy Auto-Discovery Service
+|   Windows Audio
+|   Windows Audio Endpoint Builder
+|   Windows Connection Manager
+|   Windows Defender Antivirus Network Inspection Service
+|   Windows Defender Antivirus Service
+|   Windows Defender Security Centre Service
+|   Windows Driver Foundation - User-mode Driver Framework
+|   Windows Event Log
+|   Windows Firewall
+|   Windows Font Cache Service
+|   Windows Management Instrumentation
+|   Windows Process Activation Service
+|   Windows Push Notifications System Service
+|   Windows Search
+|   Windows Time
+|   Workstation
+|_  World Wide Web Publishing Service
+| snmp-win32-software: 
+|   Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161; 2018-10-12T20:10:30
+|   Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161; 2018-10-12T20:10:22
+|_  VMware Tools; 2018-10-12T20:11:02
+| snmp-win32-users: 
+|   Administrator
+|   DefaultAccount
+|   Destitute
+|_  Guest
+Service Info: Host: Conceal
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May 26 16:40:27 2020 -- 1 IP address (1 host up) scanned in 104.31 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Tue May 26 19:14:33 2020 as: nmap -sC -sV -sT -oA nmap/initialTCP -T4 10.10.10.116
+Host: 10.10.10.116 (conceal.htb)	Status: Up
+Host: 10.10.10.116 (conceal.htb)	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///	Ignored State: closed (995)
+# Nmap done at Tue May 26 19:15:31 2020 -- 1 IP address (1 host up) scanned in 57.92 seconds

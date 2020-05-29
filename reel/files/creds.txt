@@ -1,0 +1,6 @@
+UserName       : Tom
+Password       : 1ts-mag1c!!!
+SecurePassword : System.Security.SecureString
+Domain         : HTB
+
+admin:Cr4ckMeIfYouC4n!

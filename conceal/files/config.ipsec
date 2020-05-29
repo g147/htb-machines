@@ -1,0 +1,4 @@
+Starting ike-scan 1.9 with 1 hosts (http://www.nta-monitor.com/tools/ike-scan/)
+10.10.10.116	Main Mode Handshake returned HDR=(CKY-R=b1521adfe4e6c7bd) SA=(Enc=3DES Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration(4)=0x00007080) VID=1e2b516905991c7d7c96fcbfb587e46100000009 (MS NT5 ISAKMPOAKLEY) VID=4a131c81070358455c5728f20e95452f (RFC 3947 NAT-T) VID=90cb80913ebb696e086381b5ec427b1f (draft-ietf-ipsec-nat-t-ike-02\n) VID=4048b7d56ebce88525e7de7f00d6c2d3 (IKE Fragmentation) VID=fb1de3cdf341b7ea16b7e5be0855f120 VID=e3a5966a76379fe707228231e5ce8652
+
+Ending ike-scan 1.9: 1 hosts scanned in 0.237 seconds (4.23 hosts/sec).  1 returned handshake; 0 returned notify

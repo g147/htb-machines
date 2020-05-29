@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Tue May 26 03:39:47 2020 as: nmap -sC -sV -oA nmap/full -T4 -p T:49153,49183,135,464,49155,49157,5722,389,636,3268,47001,88,445,49154,8080,53,9389,3269,1337,1433,49152,50255,49158,139,593,49167,49179, 10.10.10.52 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap/full -T4 -p T:49153,49183,135,464,49155,49157,5722,389,636,3268,47001,88,445,49154,8080,53,9389,3269,1337,1433,49152,50255,49158,139,593,49167,49179, 10.10.10.52" start="1590464387" startstr="Tue May 26 03:39:47 2020" version="7.70" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="27" services="53,88,135,139,389,445,464,593,636,1337,1433,3268-3269,5722,8080,9389,47001,49152-49155,49157-49158,49167,49179,49183,50255"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskend task="SYN Stealth Scan" time="1590464392" extrainfo="27 total ports"/>
+<taskbegin task="Service scan" time="1590464393"/>
+<taskend task="Service scan" time="1590464470" extrainfo="27 services on 1 host"/>
+<taskbegin task="NSE" time="1590464470"/>
+<taskprogress task="NSE" time="1590464501" percent="99.81" remaining="1" etc="1590464501"/>
+<taskprogress task="NSE" time="1590464531" percent="99.86" remaining="1" etc="1590464531"/>
+<taskprogress task="NSE" time="1590464561" percent="99.89" remaining="1" etc="1590464561"/>
+<taskprogress task="NSE" time="1590464591" percent="99.95" remaining="1" etc="1590464591"/>
+<taskend task="NSE" time="1590464605"/>
+<taskbegin task="NSE" time="1590464605"/>
+<taskend task="NSE" time="1590464606"/>
+<host starttime="1590464388" endtime="1590464606"><status state="up" reason="timestamp-reply" reason_ttl="127"/>
+<address addr="10.10.10.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mantis.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB15CD4)" extrainfo="Windows Server 2008 R2 SP1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB15CD4)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB15CD4)</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2020-05-26 03:41:27Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: htb.local, Site: Default-First-Site-Name" hostname="MANTIS" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds" extrainfo="workgroup: HTB" hostname="MANTIS" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="IIS7"><elem key="title">IIS7</elem>
+</script></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-sql-s" product="Microsoft SQL Server 2014" version="12.00.2000.00; RTM" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2014</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ms-sql-ntlm-info" output="&#xa;  Target_Name: HTB&#xa;  NetBIOS_Domain_Name: HTB&#xa;  NetBIOS_Computer_Name: MANTIS&#xa;  DNS_Domain_Name: htb.local&#xa;  DNS_Computer_Name: mantis.htb.local&#xa;  DNS_Tree_Name: htb.local&#xa;  Product_Version: 6.1.7601"><elem key="Target_Name">HTB</elem>
+<elem key="NetBIOS_Domain_Name">HTB</elem>
+<elem key="NetBIOS_Computer_Name">MANTIS</elem>
+<elem key="DNS_Domain_Name">htb.local</elem>
+<elem key="DNS_Computer_Name">mantis.htb.local</elem>
+<elem key="DNS_Tree_Name">htb.local</elem>
+<elem key="Product_Version">6.1.7601</elem>
+</script><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Issuer: commonName=SSL_Self_Signed_Fallback&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2020-05-26T02:55:58&#xa;Not valid after:  2050-05-26T02:55:58&#xa;MD5:   4c71 a376 8572 9204 9408 98de baa1 698a&#xa;SHA-1: d194 6903 0a47 4390 205a 440e 5c5a c2ef ba98 2abc&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQel/2x+hV4qZPfSUqbKO9PzANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjAwNTI2MDI1NTU4WhgPMjA1MDA1MjYwMjU1NThaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA5Wt2jAeyexdf&#xa;KP69sLy8NFxcj3SvWLye4BKMjoXtZNj4iNFIDPkd8eNn3F80i4AGnlRtFajlLzqs&#xa;2sPCc9GF1xeQTJoGEu6zKaywhPgOELfKynsm8EieRTh10AJrB07rtLPN4XtBdxxO&#xa;pFzj7Be6dNEKpPnYm8qOdKR7pZlOW4sCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBs&#xa;IDPD5s4l9emIb63hwd12IdT8LrhAynglwpJ51AACjenkoGgxYWNY5O0iz4LNRQNj&#xa;Ze1pnVxGUsMRzU6dwOmQFpYJPS1UzADYJtbbeiVBRjyG5gNtiKtQb+y3Ruyy6UyE&#xa;yWJsnShnsU2ml4FtPbLttaABaMVXjWIno6FchZXa2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="modulus">BIGNUM: 0x56541cd71028</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x56541cb09a48</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2050-05-26T02:55:58</elem>
+<elem key="notBefore">2020-05-26T02:55:58</elem>
+</table>
+<elem key="md5">4c71a37685729204940898debaa1698a</elem>
+<elem key="sha1">d19469030a474390205a440e5c5ac2efba982abc</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIB+zCCAWSgAwIBAgIQel/2x+hV4qZPfSUqbKO9PzANBgkqhkiG9w0BAQUFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjAwNTI2MDI1NTU4WhgPMjA1MDA1MjYwMjU1NThaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA5Wt2jAeyexdf&#xa;KP69sLy8NFxcj3SvWLye4BKMjoXtZNj4iNFIDPkd8eNn3F80i4AGnlRtFajlLzqs&#xa;2sPCc9GF1xeQTJoGEu6zKaywhPgOELfKynsm8EieRTh10AJrB07rtLPN4XtBdxxO&#xa;pFzj7Be6dNEKpPnYm8qOdKR7pZlOW4sCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBs&#xa;IDPD5s4l9emIb63hwd12IdT8LrhAynglwpJ51AACjenkoGgxYWNY5O0iz4LNRQNj&#xa;Ze1pnVxGUsMRzU6dwOmQFpYJPS1UzADYJtbbeiVBRjyG5gNtiKtQb+y3Ruyy6UyE&#xa;yWJsnShnsU2ml4FtPbLttaABaMVXjWIno6FchZXa2w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2020-05-26T03:42:44+00:00; +1m27s from scanner time."><elem key="date">2020-05-26T03:42:44+00:00</elem>
+<elem key="delta">87.0</elem>
+</script></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: htb.local, Site: Default-First-Site-Name" hostname="MANTIS" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5722"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msdfsr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/7.5"><elem>Microsoft-IIS/7.5</elem>
+</script><script id="http-title" output="Tossed Salad - Blog"><elem key="title">Tossed Salad - Blog</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49167"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49179"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49183"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="50255"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 49m26s, deviation: 1h47m21s, median: 1m25s"><elem key="mean">2966</elem>
+<elem key="stddev">6441</elem>
+<elem key="median">85</elem>
+</script><script id="ms-sql-info" output="&#xa;  10.10.10.52:1433: &#xa;    Version: &#xa;      name: Microsoft SQL Server 2014 RTM&#xa;      number: 12.00.2000.00&#xa;      Product: Microsoft SQL Server 2014&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 1433"><table key="10.10.10.52:1433">
+<table key="Version">
+<elem key="name">Microsoft SQL Server 2014 RTM</elem>
+<elem key="number">12.00.2000.00</elem>
+<elem key="Product">Microsoft SQL Server 2014</elem>
+<elem key="Service pack level">RTM</elem>
+<elem key="Post-SP patches applied">false</elem>
+</table>
+<elem key="TCP port">1433</elem>
+</table>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 46472/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 10637/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 19802/udp): CLEAN (Timeout)&#xa;  Check 4 (port 39460/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2008::sp1&#xa;  Computer name: mantis&#xa;  NetBIOS computer name: MANTIS\x00&#xa;  Domain name: htb.local&#xa;  Forest name: htb.local&#xa;  FQDN: mantis.htb.local&#xa;  System time: 2020-05-25T23:42:41-04:00&#xa;"><elem key="os">Windows Server 2008 R2 Standard 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows Server 2008 R2 Standard 6.1</elem>
+<elem key="server">MANTIS\x00</elem>
+<elem key="date">2020-05-25T23:42:41-04:00</elem>
+<elem key="fqdn">mantis.htb.local</elem>
+<elem key="domain_dns">htb.local</elem>
+<elem key="forest_dns">htb.local</elem>
+<elem key="workgroup">HTB\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2008::sp1</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: required"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">required</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled and required"><table key="2.02">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-05-26 03:42:39&#xa;  start_date: 2020-05-26 02:54:29"><elem key="date">2020-05-26 03:42:39</elem>
+<elem key="start_date">2020-05-26 02:54:29</elem>
+</script></hostscript><times srtt="311062" rttvar="51693" to="517834"/>
+</host>
+<taskbegin task="NSE" time="1590464606"/>
+<taskend task="NSE" time="1590464606"/>
+<taskbegin task="NSE" time="1590464606"/>
+<taskend task="NSE" time="1590464606"/>
+<runstats><finished time="1590464606" timestr="Tue May 26 03:43:26 2020" elapsed="218.93" summary="Nmap done at Tue May 26 03:43:26 2020; 1 IP address (1 host up) scanned in 218.93 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
