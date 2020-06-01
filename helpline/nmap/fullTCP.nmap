@@ -1,0 +1,105 @@
+# Nmap 7.70 scan initiated Wed May 27 03:35:42 2020 as: nmap -sC -sV -sT -oA nmap/fullTCP -T4 -p T:445,8080,135,49667,5985, 10.10.10.132
+Nmap scan report for helpline.htb (10.10.10.132)
+Host is up (0.36s latency).
+
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+8080/tcp  open  http-proxy    -
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Set-Cookie: JSESSIONID=29E4E0BFE20C4AC53CE87BC15EFCF78D; Path=/; HttpOnly
+|     Cache-Control: private
+|     Expires: Thu, 01 Jan 1970 01:00:00 GMT
+|     Content-Type: text/html;charset=UTF-8
+|     Vary: Accept-Encoding
+|     Date: Wed, 27 May 2020 03:37:21 GMT
+|     Connection: close
+|     Server: -
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+|     <script language='JavaScript' type="text/javascript" src='/scripts/Login.js?9309'></script>
+|     <script language='JavaScript' type="text/javascript" src='/scripts/jquery-1.8.3.min.js'></script>
+|     <link href="/style/loginstyle.css?9309" type="text/css" rel="stylesheet"/>
+|     <link href="/style/new-classes.css?9309" type="text/css" rel="stylesheet">
+|     <link href="/style/new-classes-sdp.css?9309" type="text/css" rel="stylesheet">
+|     <link href="/style/conflict-fix.css?9309" type="text/css" rel="stylesheet">
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Set-Cookie: JSESSIONID=AB1EAF17B52E15BCAB86FE23D859EED2; Path=/; HttpOnly
+|     Cache-Control: private
+|     Expires: Thu, 01 Jan 1970 01:00:00 GMT
+|     Content-Type: text/html;charset=UTF-8
+|     Vary: Accept-Encoding
+|     Date: Wed, 27 May 2020 03:37:23 GMT
+|     Connection: close
+|     Server: -
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+|     <script language='JavaScript' type="text/javascript" src='/scripts/Login.js?9309'></script>
+|     <script language='JavaScript' type="text/javascript" src='/scripts/jquery-1.8.3.min.js'></script>
+|     <link href="/style/loginstyle.css?9309" type="text/css" rel="stylesheet"/>
+|     <link href="/style/new-classes.css?9309" type="text/css" rel="stylesheet">
+|     <link href="/style/new-classes-sdp.css?9309" type="text/css" rel="stylesheet">
+|_    <link href="/style/conflict-fix.css?9309" type="text/css" rel="stylesheet">
+|_http-server-header: -
+|_http-title: ManageEngine ServiceDesk Plus
+49667/tcp open  msrpc         Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.70%I=7%D=5/27%Time=5ECDE019%P=x86_64-unknown-linux-gnu
+SF:%r(GetRequest,25D6,"HTTP/1\.1\x20200\x20OK\r\nSet-Cookie:\x20JSESSIONID
+SF:=29E4E0BFE20C4AC53CE87BC15EFCF78D;\x20Path=/;\x20HttpOnly\r\nCache-Cont
+SF:rol:\x20private\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2001:00:00\x2
+SF:0GMT\r\nContent-Type:\x20text/html;charset=UTF-8\r\nVary:\x20Accept-Enc
+SF:oding\r\nDate:\x20Wed,\x2027\x20May\x202020\x2003:37:21\x20GMT\r\nConne
+SF:ction:\x20close\r\nServer:\x20-\r\n\r\n<!DOCTYPE\x20html>\n<html>\n<hea
+SF:d>\n<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=Edge\">\n\n
+SF:\n\n\r\n\n\x20\x20\x20\x20<script\x20language='JavaScript'\x20type=\"te
+SF:xt/javascript\"\x20src='/scripts/Login\.js\?9309'></script>\n\x20\x20\x
+SF:20\x20<script\x20language='JavaScript'\x20type=\"text/javascript\"\x20s
+SF:rc='/scripts/jquery-1\.8\.3\.min\.js'></script>\n\x20\x20\x20\x20\n\x20
+SF:\x20\x20\x20<link\x20href=\"/style/loginstyle\.css\?9309\"\x20type=\"te
+SF:xt/css\"\x20rel=\"stylesheet\"/>\n\x20\x20\x20\x20<link\x20href=\"/styl
+SF:e/new-classes\.css\?9309\"\x20type=\"text/css\"\x20rel=\"stylesheet\">\
+SF:n\x20\x20\x20\x20<link\x20href=\"/style/new-classes-sdp\.css\?9309\"\x2
+SF:0type=\"text/css\"\x20rel=\"stylesheet\">\n\x20\x20\x20\x20<link\x20hre
+SF:f=\"/style/conflict-fix\.css\?9309\"\x20type=\"text/css\"\x20rel=\"styl
+SF:esheet\">")%r(HTTPOptions,25D6,"HTTP/1\.1\x20200\x20OK\r\nSet-Cookie:\x
+SF:20JSESSIONID=AB1EAF17B52E15BCAB86FE23D859EED2;\x20Path=/;\x20HttpOnly\r
+SF:\nCache-Control:\x20private\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2
+SF:001:00:00\x20GMT\r\nContent-Type:\x20text/html;charset=UTF-8\r\nVary:\x
+SF:20Accept-Encoding\r\nDate:\x20Wed,\x2027\x20May\x202020\x2003:37:23\x20
+SF:GMT\r\nConnection:\x20close\r\nServer:\x20-\r\n\r\n<!DOCTYPE\x20html>\n
+SF:<html>\n<head>\n<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE
+SF:=Edge\">\n\n\n\n\r\n\n\x20\x20\x20\x20<script\x20language='JavaScript'\
+SF:x20type=\"text/javascript\"\x20src='/scripts/Login\.js\?9309'></script>
+SF:\n\x20\x20\x20\x20<script\x20language='JavaScript'\x20type=\"text/javas
+SF:cript\"\x20src='/scripts/jquery-1\.8\.3\.min\.js'></script>\n\x20\x20\x
+SF:20\x20\n\x20\x20\x20\x20<link\x20href=\"/style/loginstyle\.css\?9309\"\
+SF:x20type=\"text/css\"\x20rel=\"stylesheet\"/>\n\x20\x20\x20\x20<link\x20
+SF:href=\"/style/new-classes\.css\?9309\"\x20type=\"text/css\"\x20rel=\"st
+SF:ylesheet\">\n\x20\x20\x20\x20<link\x20href=\"/style/new-classes-sdp\.cs
+SF:s\?9309\"\x20type=\"text/css\"\x20rel=\"stylesheet\">\n\x20\x20\x20\x20
+SF:<link\x20href=\"/style/conflict-fix\.css\?9309\"\x20type=\"text/css\"\x
+SF:20rel=\"stylesheet\">");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1m28s, deviation: 0s, median: 1m28s
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-05-27 03:39:07
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 27 03:38:16 2020 -- 1 IP address (1 host up) scanned in 153.95 seconds

@@ -1,0 +1,11 @@
+local Windows account created
+
+username: alice
+password: $sys4ops@megabank!
+admin required: no
+
+shadow admin accounts:
+
+mike_adm:Password1
+dr_acc:dr_acc
+
